@@ -17,7 +17,7 @@ def hsv_processing(imagelist):
 	i90 =imagelist[1]/1
 	stokesI = i0 + i90
 	stokesQ = i0 - i90
-	stokesU = (np.ones(stokesI.shape)*(2.0 * i45))- stokesI
+	stokesU = (2.0 * i45)- stokesI
 	polint = np.sqrt(stokesQ*stokesQ+stokesU*stokesU)
 	poldolp = polint/(stokesI+((np.ones(stokesI.shape)+0.001)))
 	polaop = 0.5 * np.arctan(stokesU, stokesQ)
