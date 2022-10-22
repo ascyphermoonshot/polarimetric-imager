@@ -14,7 +14,7 @@ def rgb_preview(imagelist):
 def hsv_processing(imagelist):
 	i0 =imagelist[0]/1
 	i45 =imagelist[1]/1
-	i90 =imagelist[1]/1
+	i90 =imagelist[2]/1
 	stokesI = i0 + i90
 	stokesQ = i0 - i90
 	stokesU = (2.0 * i45)- stokesI
